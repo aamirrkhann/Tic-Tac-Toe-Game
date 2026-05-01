@@ -52,6 +52,10 @@ const showWinner = (winner) =>{
         
     }, 100);
     disableBoxes();
+    msgContainer.style.display = "flex";
+
+
+    
    
     
 }
@@ -89,6 +93,7 @@ const resetGame =() =>{
     turnX = true;
 
     enableBoxes();
+   
 }
 
 
