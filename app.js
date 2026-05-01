@@ -51,13 +51,9 @@ const showWinner = (winner) =>{
         winMusic.play();
         
     }, 100);
-    disableBoxes();
     msgContainer.style.display = "flex";
-
-
-    
-   
-    
+    disableBoxes();
+    playNewGame.style.display = "block";
 }
 
 const disableBoxes = () =>{
@@ -81,10 +77,7 @@ const enableBoxes =()=>{
 const newGame = () =>{
     btnMusic.play();
     turnX  = true;
-
-    
-        enableBoxes();
-
+    enableBoxes();
 }
 
 const resetGame =() =>{
@@ -93,7 +86,7 @@ const resetGame =() =>{
     turnX = true;
 
     enableBoxes();
-   
+    
 }
 
 

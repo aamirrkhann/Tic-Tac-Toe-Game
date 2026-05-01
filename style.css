@@ -14,9 +14,6 @@ body{
     align-items: center;
 }
 
-.container{
-    display: none;
-}
 
 /* NAVBAR */
 
@@ -94,17 +91,17 @@ body{
 
 .newGame{
     margin-top: 20px;
-    padding: 15px 25px;
+    padding: 15px;
 
     background-color: #1f3ce2b0;
-    color: white;
+    color: #fff;
 
-    font-size: 1rem;
+    font-size: 1em;
     border-radius: 15px;
-    border: none;
-
     cursor: pointer;
+    
     display: none;
+    border: none;
 }
 
 .newGame:hover{
@@ -114,15 +111,15 @@ body{
 /* MESSAGE */
 
 .msg-container{
+    position: fixed;
+    inset: 0;
     display: none;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    background: rgba(0,0,0,0.5);
 
-    margin-top: 30px;
-
-    font-size: 2rem;
-    text-align: center;
+    z-index: 999;
 }
 
 /* IMAGE */
